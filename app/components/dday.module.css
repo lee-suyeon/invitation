@@ -1,0 +1,20 @@
+.dday {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #415e41;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dday span {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}

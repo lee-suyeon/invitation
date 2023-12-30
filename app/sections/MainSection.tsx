@@ -1,13 +1,13 @@
-"use client";
-
 import Image from "next/image";
 import mainImage from "../../public/photos/main.png";
-import styled from "@emotion/styled";
+import Dday from "../components/Dday";
+
+import classes from "./main-section.module.css";
 
 function MainSection() {
   return (
-    <SectionLayout>
-      <div className="main-content">
+    <div className={classes.main}>
+      <div className={classes.content}>
         <Image
           src={mainImage}
           alt="main-image"
@@ -17,33 +17,11 @@ function MainSection() {
             height: "auto",
           }}
         />
-        <div className="main-text">다운, 수연 결혼해요!!!</div>
+        <div className={classes.text}>다운, 수연 결혼해요!!!</div>
+        <Dday />
       </div>
-    </SectionLayout>
+    </div>
   );
 }
-
-const SectionLayout = styled.section`
-  .main-content {
-    position: relative;
-  }
-
-  img {
-    display: block;
-  }
-
-  .main-text {
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    z-index: 999;
-    color: #fff;
-    font-weight: 300;
-    text-align: center;
-    width: 100%;
-  }
-`;
 
 export default MainSection;

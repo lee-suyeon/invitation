@@ -1,10 +1,8 @@
-"use client";
-
-import styled from "@emotion/styled";
+import classes from "./intro-section.module.css";
 
 function IntroSection() {
   return (
-    <SectionLayout>
+    <div className={classes.intro}>
       <p>👰🏻🤍🤵🏻</p>
       <p>
         여름의 뜨거운 햇살 아래, 사랑을 시작하고 <br />
@@ -15,7 +13,7 @@ function IntroSection() {
         봄의 싱그러움으로 사랑을 피워나가기로 한 <br />
         결심을 함께 나누고자 여러분을 초대합니다.
       </p>
-      <Divider />
+      <div className={classes.divider} />
       <div>
         <p>
           ???, ???의 아들 <span>김다운</span> <br />
@@ -28,31 +26,8 @@ function IntroSection() {
           인천 샤펠드미앙
         </p>
       </div>
-    </SectionLayout>
+    </div>
   );
 }
-
-const SectionLayout = styled.section`
-  padding: 60px 16px;
-  text-align: center;
-
-  p {
-    margin-bottom: 40px;
-    line-height: 1.5;
-  }
-
-  span {
-    font-size: 18px;
-    font-weight: 600;
-  }
-`;
-
-const Divider = styled.div`
-  width: 1px;
-  height: 40px;
-  background: #555;
-  transform: rotate(45deg);
-  margin: 0 auto 30px;
-`;
 
 export default IntroSection;

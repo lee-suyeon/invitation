@@ -1,0 +1,22 @@
+.intro {
+  padding: 60px 16px;
+  text-align: center;
+}
+
+.intro p {
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.intro span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: #555;
+  transform: rotate(45deg);
+  margin: 0 auto 30px;
+}
