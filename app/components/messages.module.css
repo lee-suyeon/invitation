@@ -1,0 +1,46 @@
+.messages {
+  padding: 30px 20px 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.message {
+  position: relative;
+  background-color: #e7e7e7;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #333;
+  max-width: 80%;
+  margin: 0 auto 30px;
+}
+
+.message:nth-child(odd):after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+  margin-left: -10px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent #e7e7e7 transparent transparent;
+}
+
+.message:nth-child(even):before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 10px;
+  margin-left: -10px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent transparent transparent #e7e7e7;
+}
+
+.message p {
+  text-align: left;
+}
+
+.message span {
+  display: block;
+  text-align: right;
+}
