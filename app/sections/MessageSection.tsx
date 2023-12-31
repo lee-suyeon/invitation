@@ -5,6 +5,7 @@ import Image from "next/image";
 import classes from "./message-section.module.css";
 import { couple } from "../assets/images";
 import Messages from "../components/Messages";
+import MessageForm from "../components/MessageForm";
 
 const sampleMessages = [
   { id: 1, name: "제우스", text: "오케오케 형이야~" },
@@ -58,6 +59,7 @@ function MessageSection() {
         )}
       </div>
       <Messages messages={sampleMessages} />
+      <MessageForm />
     </section>
   );
 }
