@@ -22,14 +22,20 @@
   margin-bottom: 30px;
 }
 
-.to > div {
-  width: 50%;
-}
-
 .to .selected {
   margin: 0 auto;
 }
 
 .to img {
   margin: 0 auto 10px;
+}
+
+.photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  margin: 0 auto;
+  line-height: 120px;
+  text-align: center;
 }
