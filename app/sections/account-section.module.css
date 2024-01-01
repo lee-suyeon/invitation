@@ -1,0 +1,40 @@
+.account {
+  padding: 60px 16px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.title h3 {
+  margin-bottom: 15px;
+}
+
+.title p {
+  letter-spacing: -0.5px;
+}
+
+.bar {
+  width: 100%;
+  height: 1px;
+  background-color: #b4b4b4;
+  margin: 15px 0;
+}
+
+.account-btn {
+  width: 100%;
+  background-color: #e7e7e7;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
