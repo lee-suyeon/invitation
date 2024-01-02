@@ -4,6 +4,7 @@ import classes from "./account-section.module.css";
 
 import classNames from "classnames/bind";
 import Button from "../components/Button/Button";
+import Title from "../components/Title/Title";
 const cx = classNames.bind(classes);
 
 function AccountSection() {
@@ -25,15 +26,15 @@ function AccountSection() {
   };
 
   return (
-    <div className={classes.account}>
-      <div className={classes.title}>
+    <section className={classes.account}>
+      <Title>
         <h3>마음 전하실 곳</h3>
         <p>
           참석이 어려우신 분들을 위해 <br />
           계좌번호를 기재하였습니다. <br />
           너그러운 마음으로 양해부탁드립니다.
         </p>
-      </div>
+      </Title>
       <div>
         <div className={cx("account-btn")} onClick={groomAccountClickHandler}>
           신랑측 계좌번호 보기
@@ -68,7 +69,7 @@ function AccountSection() {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

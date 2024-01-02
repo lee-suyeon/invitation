@@ -6,6 +6,7 @@ import classes from "./message-section.module.css";
 import { couple } from "../assets/images";
 import Messages from "../components/Messages";
 import MessageForm from "../components/MessageForm";
+import Title from "../components/Title/Title";
 
 const sampleMessages = [
   { id: 1, name: "제우스", text: "오케오케 형이야~" },
@@ -15,17 +16,16 @@ const sampleMessages = [
   { id: 5, name: "케리아", text: "축하해요!!" },
 ];
 
-const { suyeon, dawoon } = couple;
 function MessageSection() {
   return (
     <section className={classes.message}>
-      <div className={classes.title}>
+      <Title>
         <h3>축하메세지</h3>
         <p>
           여러분의 따뜻한 축하가 저희의 새로운 시작을 <br />
           더욱 의미 있게 만들어 줄거에요!
         </p>
-      </div>
+      </Title>
       <div className={classes.to}>
         <div className={classes.photo}>photo</div>
       </div>
