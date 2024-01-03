@@ -1,10 +1,9 @@
 .map {
-  height: 500px;
   padding: 60px 16px;
 }
 
 .maparea {
-  height: 80%;
+  height: 380px;
 }
 
 .reset {
@@ -43,4 +42,37 @@
   background: url(https://ssl.pstatic.net/static/maps/m/spr_trff_v6.png) 0 0;
   background-size: 200px 200px;
   -webkit-background-size: 200px 200px;
+}
+
+.info li {
+  margin-bottom: 10px;
+  list-style: none;
+  display: flex;
+}
+
+.info {
+  margin: 20px 0;
+}
+
+.info .title {
+  display: block;
+  width: 70px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+.info .title:after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #333;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info li span:last-child {
+  margin-left: 15px;
 }
