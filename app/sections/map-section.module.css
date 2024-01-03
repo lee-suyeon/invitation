@@ -1,0 +1,46 @@
+.map {
+  height: 500px;
+  padding: 60px 16px;
+}
+
+.maparea {
+  height: 80%;
+}
+
+.reset {
+  color: red;
+}
+
+.btn_mylct {
+  z-index: 100;
+  overflow: hidden;
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(58, 70, 88, 0.45);
+  border-radius: 2px;
+  background: #fcfcfd;
+  text-align: center;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.spr_trff {
+  width: 20px;
+  height: 20px;
+  margin: 7px 0 0 0;
+  background-position: -153px -31px;
+}
+
+.spr_ico_mylct {
+  overflow: hidden;
+  display: inline-block;
+  color: transparent !important;
+  vertical-align: top;
+  background: url(https://ssl.pstatic.net/static/maps/m/spr_trff_v6.png) 0 0;
+  background-size: 200px 200px;
+  -webkit-background-size: 200px 200px;
+}
