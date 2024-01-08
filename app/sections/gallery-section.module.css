@@ -1,0 +1,17 @@
+.gallery {
+  background: #f6f6f6;
+  padding: 40px 24px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.container img {
+  display: inline-block;
+  margin-right: 5px;
+}
